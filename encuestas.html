@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuestas ARMY</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>🗳️ Encuesta ARMY</h1>
+<p>¿Qué prefieres hoy?</p>
+
+<button onclick="votar('A')">Dynamite</button>
+<button onclick="votar('B')">Butter</button>
+
+<div id="res" class="card"></div>
+
+<script>
+let A = 0, B = 0;
+
+function votar(x){
+  x === 'A' ? A++ : B++;
+  document.getElementById("res").innerHTML =
+    `Dynamite: ${A}<br>Butter: ${B}`;
+}
+</script>
+
+</body>
+</html>

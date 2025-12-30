@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(135deg, #5b2d8b, #2e003e);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.menu a, .menu button {
+  display: block;
+  margin: 10px auto;
+  padding: 14px;
+  width: 85%;
+  max-width: 330px;
+  border-radius: 14px;
+  background: white;
+  color: #5b2d8b;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu a:hover, .menu button:hover {
+  background: #e8d9ff;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 18px;
+  background: rgba(0,0,0,0.35);
+  border-radius: 14px;
+}

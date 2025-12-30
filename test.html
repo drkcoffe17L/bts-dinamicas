@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué miembro eres hoy?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>🎤 ¿Qué miembro eres hoy?</h1>
+<p>Tócalo una vez al día 💜</p>
+
+<button onclick="resultado()">Ver resultado</button>
+
+<div id="r" class="card"></div>
+
+<script src="js/data.js"></script>
+<script>
+function resultado() {
+  const m = miembros[Math.floor(Math.random() * miembros.length)];
+  document.getElementById("r").innerHTML =
+    `💜 Hoy eres <b>${m.n}</b><br>${m.d}`;
+}
+</script>
+
+</body>
+</html>

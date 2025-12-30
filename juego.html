@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivina la canción</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>🎶 Adivina la canción</h1>
+
+<div id="juego" class="card"></div>
+
+<script src="js/data.js"></script>
+<script>
+const g = cancionesJuego[0];
+let html = `<p>🎵 "${g.q}"</p>`;
+
+g.o.forEach((o,i)=>{
+  html += `<button onclick="res(${i})">${o}</button><br>`;
+});
+
+document.getElementById("juego").innerHTML = html;
+
+function res(i){
+  alert(i === g.a ? "💜 Correcto ARMY!" : "❌ Intenta otra vez");
+}
+</script>
+
+</body>
+</html>
